@@ -56,6 +56,10 @@ app.get("/about", (req, res) => {
   });
 });
 
+app.get("/portfolio", (req, res) => {
+  res.render("portfolio.hbs", { pageTitle: "Portfolio Page" });
+});
+
 app.get("/bad", (req, res) => {
   res.send({
     errorMessage: "Unable to get your request!"
